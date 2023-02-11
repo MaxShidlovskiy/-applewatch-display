@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body
+{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.img-stack{
+display: flex;
+justify-content: space-between;
+position: absolute;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    background-image: url(./assets/Rectangle7.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 600px;
+    padding-top: 55px;
+   
+}
+.clock
+{
+    width:350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./assets/clock.png);
+    background-size: cover;
+        
+}
+.clock:before
+{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+}
+.clock .hour,
+.clock .min,
+.clock .sec
+{
+    position: absolute;
+}
+.clock .hour, .hr
+{
+ width: 160px;
+ height: 160px;
+}
+.clock .min, .mn
+{
+ width: 190px;
+ height: 190px;
+}
+.clock .sec, .sc
+{
+ width: 230px;
+ height: 230px;
+}
+.hr, .mn, .sc
+{
+    display: flex;
+    justify-content: center;
+     position: absolute;
+    border-radius: 50%;
+}
+.hr:before
+{
+  content: '';
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    background: #ffef10;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+.mn:before
+{
+  content: '';
+    position: absolute;
+    width: 4px;
+    height: 110px;
+    background: #2ec01b;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+.sc:before
+{
+  content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #ff105e;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}

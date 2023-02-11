@@ -1,22 +1,23 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
-body
-{
-display: flex;
+
+body {
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
+
 }
-.img-stack{
-display: flex;
-justify-content: space-between;
-position: absolute;
+
+.img-stack {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
 }
+
 .img {
     display: flex;
     justify-content: center;
@@ -26,21 +27,21 @@ position: absolute;
     width: 400px;
     height: 600px;
     padding-top: 55px;
-   
+
 }
-.clock
-{
-    width:350px;
+
+.clock {
+    width: 350px;
     height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url(./assets/clock.png);
     background-size: cover;
-        
+
 }
-.clock:before
-{
+
+.clock:before {
     content: '';
     position: absolute;
     width: 15px;
@@ -49,38 +50,43 @@ position: absolute;
     border-radius: 50%;
     z-index: 10000;
 }
+
 .clock .hour,
 .clock .min,
-.clock .sec
-{
+.clock .sec {
     position: absolute;
 }
-.clock .hour, .hr
-{
- width:262px;
- height: 262px;
+
+.clock .hour,
+.hr {
+    width: 262px;
+    height: 262px;
 }
-.clock .min, .mn
-{
- width: 200px;
- height: 296px;
+
+.clock .min,
+.mn {
+    width: 200px;
+    height: 296px;
 }
-.clock .sec, .sc
-{
- width: 230px;
- height: 333px;
+
+.clock .sec,
+.sc {
+    width: 230px;
+    height: 333px;
 }
-.hr, .mn, .sc
-{
+
+.hr,
+.mn,
+.sc {
     display: flex;
     justify-content: center;
-     position: absolute;
+    position: absolute;
     border-radius: 50%;
-   
+
 }
-.hr:before
-{
-  content: '';
+
+.hr:before {
+    content: '';
     position: absolute;
     width: 8px;
     height: 130px;
@@ -88,9 +94,9 @@ position: absolute;
     z-index: 10;
     border-radius: 6px 6px 0 0;
 }
-.mn:before
-{
-  content: '';
+
+.mn:before {
+    content: '';
     position: absolute;
     width: 6px;
     height: 150px;
@@ -98,9 +104,9 @@ position: absolute;
     z-index: 11;
     border-radius: 6px 6px 0 0;
 }
-.sc:before
-{
-  content: '';
+
+.sc:before {
+    content: '';
     position: absolute;
     width: 3px;
     height: 210px;

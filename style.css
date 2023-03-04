@@ -12,12 +12,6 @@ body {
 
 }
 
-.img-stack {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-}
-
 .img {
     display: flex;
     justify-content: center;
